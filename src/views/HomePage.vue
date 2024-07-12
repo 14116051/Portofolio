@@ -14,7 +14,7 @@
         <div class="grid grid-cols-12 py-8 bg-gray-200 lg:h-screen">
             <!-- Main Content -->
             <div class="col-span-12 sm:col-span-6 flex justify-center items-center pb-4 lg:pb-0">
-                <img class="object-cover lg:h-96" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg"/>
+                <img class="object-cover lg:h-96" src="https://pic.onlinewebfonts.com/thumbnails/icons_420864.svg"/>
             </div>
             <!-- Sidebar -->
             <div class="col-span-12 sm:col-span-6 flex justify-center items-center pt-4 lg:pt-0">
@@ -94,7 +94,9 @@
                                     </path>
                                 </svg> -->
                                 <h3 class="mt-8 text-lg font-semibold text-black group-hover:text-white ">Project Manager</h3>
-                                <p class="mt-4 text-base text-gray-600 group-hover:text-white  "> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus est consectetur quis tempore eaque amet quos molestias obcaecati maxime magnam officiis iure voluptatem et laboriosam iste, ipsa doloribus eligendi facere!</p>
+                                <p class="mt-4 text-base text-gray-600 group-hover:text-white"> 
+                                    More than 1 years of experience as an IT Project Manager in a company engaged in software house/software development.
+                                </p>
                             </div>
                         </a>
 
@@ -114,7 +116,9 @@
                                     </path>
                                 </svg> -->
                                 <h3 class="mt-8 text-lg font-semibold text-black group-hover:text-white ">Software Quality Assurance</h3>
-                                <p class="mt-4 text-base text-gray-600 group-hover:text-white  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo officia enim consequatur voluptatem quam, dignissimos numquam harum eos, quidem quis facilis assumenda quibusdam deserunt natus excepturi ullam mollitia libero neque.</p>
+                                <p class="mt-4 text-base text-gray-600 group-hover:text-white  ">
+                                    More than 2 years of experience as Software Quality Assurance in companies engaged in software development and SaaS (Software as a service).
+                                </p>
                             </div>
                         </a>
 
@@ -135,7 +139,9 @@
                                 </svg> -->
                                 <h3 class="mt-8 text-lg font-semibold text-black group-hover:text-white ">Web Development
                                 </h3>
-                                <p class="mt-4 text-base text-gray-600 group-hover:text-white  ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia asperiores odio consequatur hic dolore aut natus placeat doloremque, qui ea suscipit eius eos ullam a dicta illum provident, magnam accusantium.</p>
+                                <p class="mt-4 text-base text-gray-600 group-hover:text-white">
+                                    Experience as a freelance Software Engineer focusing on web development, building large-scale and complex applications.
+                                </p>
                             </div>
                         </a>
 
