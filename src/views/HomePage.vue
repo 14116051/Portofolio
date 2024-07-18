@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import logo from '../assets/90\'sDev2.png';
 
 // // essential styles
 // import 'vue-pdf-embed/dist/style/index.css'
@@ -22,7 +23,7 @@ const toggleDropdown = () => {
         <div class="grid grid-cols-12 py-8 bg-gray-200 lg:h-screen">
             <!-- Main Content -->
             <div class="col-span-12 sm:col-span-6 flex justify-center items-center pb-4 lg:pb-0">
-                <img class="object-cover lg:h-96" src="../assets//90'sDev2.png"/>
+                <img class="object-cover lg:h-96" :src="logo"/>
             </div>
             <!-- Sidebar -->
             <div class="col-span-12 sm:col-span-6 flex justify-center items-center pt-4 lg:pt-0">
