@@ -11,7 +11,8 @@ const toggleMenu = () => {
 <template>
   <nav class="flex flex-wrap justify-between items-center py-4 shadow-xl bg-white">
     <div class="px-4 flex justify-between w-full lg:w-auto">
-      <a href="#"><img class="w-20 object-cover rounded-xl" src="https://pic.onlinewebfonts.com/thumbnails/icons_420864.svg"/></a>
+      
+      <router-link to="/"><img class="w-24 object-cover rounded-xl" src="../src/assets/90'sDev2.png"/></router-link>
       <button class="text-gray-500 lg:hidden" @click="toggleMenu">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>

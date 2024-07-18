@@ -1,24 +1,32 @@
 <script setup lang="ts">
-    import { ref } from 'vue';
-    
+import { ref } from 'vue';
 
-    const isDropdownOpen = ref(false);
-    const toggleDropdown = () => {
-        isDropdownOpen.value = !isDropdownOpen.value;
-    };
+// // essential styles
+// import 'vue-pdf-embed/dist/style/index.css'
+
+// // optional styles
+// import 'vue-pdf-embed/dist/style/annotationLayer.css'
+// import 'vue-pdf-embed/dist/style/textLayer.css'
+
+const pdfSourcePM = 'src/assets/file/CV-ilham-PM.pdf';
+const pdfSourceSE = 'src/assets/file/CV-ilham-SE.pdf';
+
+const isDropdownOpen = ref(false);
+const toggleDropdown = () => {
+    isDropdownOpen.value = !isDropdownOpen.value;
+};
 </script>
 
 <template>
-    
-    <section class= "max-h-screen">
+    <section class="max-h-screen">
         <div class="grid grid-cols-12 py-8 bg-gray-200 lg:h-screen">
             <!-- Main Content -->
             <div class="col-span-12 sm:col-span-6 flex justify-center items-center pb-4 lg:pb-0">
-                <img class="object-cover lg:h-96" src="https://pic.onlinewebfonts.com/thumbnails/icons_420864.svg"/>
+                <img class="object-cover lg:h-96" src="../assets//90'sDev2.png"/>
             </div>
             <!-- Sidebar -->
             <div class="col-span-12 sm:col-span-6 flex justify-center items-center pt-4 lg:pt-0">
-                <div class=" grid grid-rows-3">
+                <div class="grid grid-rows-3">
                     <div> 
                         <h1 class="text-4xl font-semibold tracking-widest text-g uppercase"> Ilham </h1> 
                     </div>
@@ -28,26 +36,30 @@
                     <div class="grid grid-cols-2 gap-2 relative">
                         <!-- CV Button with Dropdown -->
                         <div class="relative">
-                            <button @click="toggleDropdown" class="px-3 w-full md:px-4 py-1 md:py-2 border border-sky-600 text-black rounded-lg hover:bg-green-500 flex justify-between items-center">
-                                <span>CV</span>
+                            <button @click="toggleDropdown" class="px-3 w-full md:px-4 py-2 md:py-2 border border-sky-600 text-black rounded-lg hover:bg-green-500 flex justify-between items-center">
+                                <span>Curriculum Vitae</span>
                                 <i class="fa-solid fa-arrow-circle-down ml-2"></i>
                             </button>
                             <div v-if="isDropdownOpen" class="absolute left-0 mt-2 bg-gray-200 border border-gray-300 rounded-lg shadow-lg z-10 w-max">
-                                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-lg"> <i class="fa-solid fa-file-alt"></i> CV-Project Manager</a>
-                                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-lg"> <i class="fa-solid fa-file-alt"></i> CV-Software Engineer</a>
+                                <a :href="pdfSourcePM" target="_blank" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-lg"> 
+                                    <i class="fa-solid fa-file-alt"></i> CV-Project Manager
+                                </a>
+                                <a :href="pdfSourceSE" target="_blank" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-lg"> 
+                                    <i class="fa-solid fa-file-alt"></i> CV-Software Engineer
+                                </a>
                             </div>
                         </div>
                         <!-- Contact Button -->
                         <button class="px-3 md:px-4 py-1 md:py-2 border border-sky-600 text-black rounded-lg hover:bg-green-500">
-                        <a href="https://wa.me/+6282271056498">Contact</a> <i class="fa-solid fa-envelope ml-2"></i>
+                            <a href="https://wa.me/+6282271056498">Contact</a> 
+                            <i class="fa-solid fa-envelope ml-2"></i>
                         </button>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
-        
+
     <section class="flex justify-center items-center h-32 overflow-hidden">
         <div class="flex gap-2 lg:justify-center md:justify-center items-center h-full overflow-x-auto whitespace-nowrap p-2">
             <button class="w-max h-12 flex justify-center items-center border border-sky-600 text-black hover:bg-green-500 rounded-lg m-2 p-2"> Project Manager </button>
@@ -56,15 +68,6 @@
         </div>
     </section>
 
-    <!-- <section class="mt-2 bg-gray-200">
-        <div  class="flex flex-col justify-center items-center h-32" >
-            <h1 class="text-3xl"> Portofolios </h1>
-            <h2 class="text-center">Click on the cards to see my portofolio of related category</h2>
-        </div>
-
-        
-
-    </section> -->
 
     <!-- component -->
     <section class="bg-gray-200">
